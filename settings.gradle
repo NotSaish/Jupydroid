@@ -1,0 +1,14 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "JupyDroid"
+include ':app'
+include ':terminal-emulator'
+include ':terminal-view'
+
+project(':terminal-emulator').projectDir = new File('/data/data/com.termux/files/home/termux-app/terminal-emulator')
+project(':terminal-view').projectDir = new File('/data/data/com.termux/files/home/termux-app/terminal-view')

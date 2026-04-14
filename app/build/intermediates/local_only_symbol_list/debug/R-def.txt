@@ -1,0 +1,8 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+id myButton
+layout activity_main
+style AppTheme
